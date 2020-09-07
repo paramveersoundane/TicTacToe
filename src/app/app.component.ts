@@ -37,10 +37,8 @@ export class AppComponent implements OnInit {
          else this.win_one="Player2 is winner"
          return true;
       }
-      return false
- 
-
     }
+     return false;
   }
   changeInput(row:number,col:number,response){
     console.log(this.counter)
