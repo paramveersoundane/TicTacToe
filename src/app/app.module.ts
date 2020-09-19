@@ -2,20 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { Player1Component } from './player1/player1.component';
-import { Player2Component } from './player2/player2.component';
+import { CellComponent } from './cell/cell.component';
+import { BoardComponent } from './board/board.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    Player1Component,
-    Player2Component
+    CellComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

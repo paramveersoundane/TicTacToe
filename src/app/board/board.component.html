@@ -1,0 +1,30 @@
+<p>board works!</p>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 0 : 3; let i=index" [value]='cell' [color]='colors[i]'
+    (clickEvent)="clickHandler(i)"></app-cell> 
+</div>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 3 : 6; let i=index" [value]='cell'  [color]='colors[i+3]'
+     (clickEvent)="clickHandler(i+3)"></app-cell> 
+</div>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 6 : 9; let i=index" [value]='cell'  [color]='colors[i+6]'
+     (clickEvent)="clickHandler(i+6)"></app-cell> 
+</div>
+
+  <div [style.background]='color'>{{player}}</div>
+  <div *ngIf="gameover"> winner is {{winner}}</div>
+
+  <!-- <p>board works!</p>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 0 : 3; let i=index" value=[(cell)] 
+    (clickEvent)="clickHandler(i)"></app-cell> 
+</div>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 3 : 6; let i=index" value=[(cell)]
+     (clickEvent)="clickHandler(i+3)"></app-cell> 
+</div>
+<div class="clearfix">
+    <app-cell  *ngFor="let cell of cells | slice: 6 : 9; let i=index" value=[(cell)]
+     (clickEvent)="clickHandler(i+6)"></app-cell> 
+</div> -->
